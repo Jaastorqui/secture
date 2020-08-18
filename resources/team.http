@@ -1,0 +1,51 @@
+
+## team get all
+GET http://secture.local/api/team
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+
+###
+
+## team set one
+POST http://secture.local/api/team
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Real Madrid"}
+
+###
+
+## team get by id
+GET http://secture.local/api/team/4
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+
+###
+
+## team update one
+PUT http://secture.local/api/team/3
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Real Sociedad"}
+
+
+
+###
+
+## team delete one
+DELETE http://secture.local/api/team/1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+
+

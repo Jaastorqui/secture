@@ -1,0 +1,60 @@
+
+
+## player get all
+GET http://secture.local/api/player?currency=USD&position=forward&team=Real%20Madrid
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+## player set one
+POST http://secture.local/api/player
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "Gareth Bale",
+  "team_id": 4,
+  "price": 200.29,
+  "position": "forward"
+}
+
+<> 2020-08-19T124138.201.json
+
+###
+
+## player get by id
+GET http://secture.local/api/player/4?currency=USD&position=forward&team=athletic
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+## player update one
+PUT http://secture.local/api/player/3
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "David Silva",
+  "team_id": 3,
+  "price": 22.24,
+  "position": "forward"
+}
+
+###
+
+## player delete one
+DELETE http://secture.local/api/player/1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+
+
