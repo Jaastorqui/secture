@@ -35,7 +35,7 @@ class Player
     /**
      * @ORM\Column(type="float")
      */
-    private $price;
+    private float $price;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -75,7 +75,7 @@ class Player
     {
         if ($currency !== "") {
             $http_client = HttpClientHelper::fetchCurrency($currency);
-            $this->price = $this->price * $http_client;
+            return $this->price * $http_client;
         }
         return $this->price;
     }
